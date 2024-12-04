@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+let count=0
+
 echo ""
 echo "                                        Description"
 echo ""
@@ -15,7 +18,6 @@ if [ "$person_age" -lt 18 ]; then
 else
 	echo "18? Great! Ready for life ruining question?"
 
-fi
 echo ""
 echo "ohk off with the first question mate"
 echo ""
@@ -30,6 +32,7 @@ read ans1
 if [ "$ans1" == "c" ]; then
 	echo ""
 	echo "correct bud on to next one"
+	let count+=1
 else
 	echo ""
 	echo "foqqof mate cant even answer this"
@@ -46,23 +49,62 @@ read ans2
 if [ "$ans2" == "a" ]; then
         echo ""
         echo "correct bud on to next one"
+	let count+=1
 else
         echo ""
         echo "wadefoq mate cant even answer this?!"
 fi
 
-echo "Why do programmers hate nature?"
+echo "3.Why do programmers hate nature?"
 echo ""
 echo "Too many bugs."
 echo "Too many branches"
 echo "No Wi-Fi"
 echo "It had a screen issue"
-read ans2
+read ans3
 
-if [ "$ans2" == "a" ]; then
+if [ "$ans3" == "a" ]; then
         echo ""
         echo "correct bud on to next one"
+	let count+=1
 else
         echo ""
-        echo "wadefoq mate cant even answer this?!"
+        echo "harram!! mate cant even answer this?!"
 fi
+echo "4.Why do Java developers wear glasses?"
+echo ""
+echo "To see beyond the semicolon"
+echo "To look smarter during interviews."
+echo "Because they don’t C#"
+echo "It’s a requirement from Oracle"
+read ans4
+
+if [ "$ans4" == "a" ]; then
+        echo ""
+        echo "correct bud on to next one"
+	let count+=1
+else
+        echo ""
+        echo "bratha!! syc it's a wrong answer!!"
+fi
+
+echo "5.What’s the best way to fix a broken program?"
+echo ""
+echo "Refactor the code responsibly."
+echo "Google “how to fix my code."
+echo "Add more comments to confuse the bugs."
+echo "Turn it off and on again."
+read ans5
+
+if [ "$ans5" == "c" ]; then
+        echo ""
+        echo "correct bud on to next one"
+	let count+=1
+
+else
+        echo ""
+        echo "skibidi toilet fucker wrong answer!!"
+fi
+echo "Your score"$count
+fi
+
